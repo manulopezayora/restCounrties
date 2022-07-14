@@ -1,0 +1,16 @@
+<header class="header">
+    <section class="header__title">
+      <h1 class="title__text">Where in the world?</h1>
+    </section>
+    <section class="header__dark-mode" (click)="changeDarkMode()">
+      <section class="dark-mode__icon" *ngIf="!darkMode">
+        <i class="fa-solid fa-moon"></i>
+      </section>
+      <section class="dark-mode__icon" *ngIf="darkMode">
+        <i class="fa-solid fa-sun"></i>
+      </section>
+      <section class="dark-mode__text">
+        <p>Dark Mode</p>
+      </section>
+    </section>
+  </header>
