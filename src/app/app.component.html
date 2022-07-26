@@ -4,3 +4,5 @@
 <i class="fa-solid fa-left-long"></i> -->
 
 <app-header></app-header>
+
+<app-search-input [inputPlaceholder]="'Search for a country...'" (sendSearchValue)="addItem($event)"></app-search-input>

@@ -1,0 +1,4 @@
+<div class="input-group">
+    <em class="fa-solid fa-magnifying-glass input-group__icon" (click)="searchValueEmit()"></em>
+    <input type="text" class="input-group__input" [placeholder]="inputPlaceholder" [(ngModel)]="searchValue" (keyup.enter)="searchValueEmit()" />
+</div>
