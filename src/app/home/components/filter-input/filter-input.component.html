@@ -1,0 +1,4 @@
+<select #combo *ngIf="comboValues" class="select" name="select" placeholder="Select region" (change)="selectedOption(combo.value)">
+    <option class="select__option" [value]="'clear'">{{ isFilteredByRegion ? 'Clear filter' : 'Filter by region...' }}</option>
+    <option *ngFor="let region of comboValues" class="select__option" [value]="region">{{ region }}</option>
+</select>

@@ -1,5 +1,7 @@
 <app-search-input [inputPlaceholder]="'Search for a country...'" (sendSearchValue)="searchCountry($event)"></app-search-input>
 
+<app-filter-input [comboValues]="regionComboValues" (onSelectedOption)="selectedRegion($event)"></app-filter-input>
+
 <section class="main-content">
     <app-card *ngIf="countriesList?.length" [countriesList]="countriesList"></app-card>
 </section>

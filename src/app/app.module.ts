@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { CountryListComponent } from './home/pages/country-list/country-list.component';
 import { CountryDetailComponent } from './home/pages/country-detail/country-detail.component';
 import { CardComponent } from './home/components/card/card.component';
+import { FilterInputComponent } from './home/components/filter-input/filter-input.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CardComponent } from './home/components/card/card.component';
     SearchInputComponent,
     CountryListComponent,
     CountryDetailComponent,
-    CardComponent
+    CardComponent,
+    FilterInputComponent
   ],
   imports: [
     BrowserModule,
