@@ -8,9 +8,9 @@
 .main-content__card {
     margin-top: 1rem;
     width: 80%;
-    background: rgba( 255, 255, 255, 0.9 );
+    background: var(--card-background);
     border-radius: 10px;
-    box-shadow: 0 5px 10px 0 rgba(86, 87, 92, 0.37);
+    box-shadow: var(--card-box-shadow);
     overflow: hidden;
 
     .card__img {
@@ -20,12 +20,14 @@
     .card__title {
         font-size: 1.5rem;
         padding-left: 2rem;
+        color: var(--font-color);
     }
 
     .card__info-list {
         list-style: none;
         padding-left: 2rem;
         margin-bottom: 3rem;
+        color: var(--font-color);
         
         .info-list__item {
             font-size: 1.2rem;

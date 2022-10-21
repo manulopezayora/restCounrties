@@ -12,10 +12,10 @@
     width: 70%;
     border: none;
     outline: none;
-    background: rgba( 255, 255, 255, 0.9 );
+    background: var(--card-background);
     border-radius: 10px;
-    box-shadow: 0 5px 10px 0 rgba(86, 87, 92, 0.37);
-    color: var(--Dark-Gray);
+    box-shadow: var(--card-box-shadow);
+    color: var(--font-color);
     font-family: var(--primary-font);
 }
 

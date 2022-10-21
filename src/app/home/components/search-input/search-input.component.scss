@@ -12,24 +12,28 @@
     justify-content: space-between;
     align-items: center;
     width: 70%;
-    background: rgba( 255, 255, 255, 0.9 );
+    background: var(--card-background);
     border-radius: 10px;
-    box-shadow: 0 5px 10px 0 rgba(86, 87, 92, 0.37);
+    box-shadow: var(--card-box-shadow);
 }
 
 .input-group__icon {
     margin-right: 1rem;
     font-size: 16px;
     outline: none;
-    color: var(--Dark-Gray);
+    color: var(--font-color);
 }
 
 .input-group__input {
-    color: var(--Dark-Gray);
+    color: var(--font-color);
     font-size: 16px;
     font-family: var(--primary-font);
     background: inherit;
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: none;
     outline: none;
+}
+
+.input-group__input::placeholder {
+    color: var(--font-color);
 }
