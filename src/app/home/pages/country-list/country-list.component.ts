@@ -10,10 +10,10 @@ import { RestCountriesService } from '../../services/restCountries/rest-countrie
 })
 export class CountryListComponent implements OnInit {
 
-  public allCountriesList: RESTCountries[];
+  public countriesList: RESTCountries[];
 
   constructor(private restCountriesService: RestCountriesService) {
-    this.allCountriesList = [];
+    this.countriesList = [];
   }
 
   ngOnInit(): void {
@@ -25,7 +25,7 @@ export class CountryListComponent implements OnInit {
   }
 
   private async initialize(): Promise<void> {
-    this.allCountriesList = await this.getAllCountries();
+    this.countriesList = await this.getAllCountries();
   }
 
   private async getAllCountries(): Promise<RESTCountries[]> {

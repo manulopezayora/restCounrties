@@ -9,6 +9,7 @@ import { SearchInputComponent } from './home/components/search-input/search-inpu
 import { FormsModule } from '@angular/forms';
 import { CountryListComponent } from './home/pages/country-list/country-list.component';
 import { CountryDetailComponent } from './home/pages/country-detail/country-detail.component';
+import { CardComponent } from './home/components/card/card.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CountryDetailComponent } from './home/pages/country-detail/country-deta
     HeaderComponent,
     SearchInputComponent,
     CountryListComponent,
-    CountryDetailComponent
+    CountryDetailComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

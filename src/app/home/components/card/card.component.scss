@@ -1,0 +1,42 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content__card {
+    margin-top: 1rem;
+    width: 80%;
+    background: rgba( 255, 255, 255, 0.9 );
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(86, 87, 92, 0.37);
+    overflow: hidden;
+
+    .card__img {
+        max-width: 100%;
+    }
+    
+    .card__title {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .card__info-list {
+        list-style: none;
+        padding-left: 2rem;
+        margin-bottom: 3rem;
+        
+        .info-list__item {
+            font-size: 1.2rem;
+        }
+    
+        .item__title {
+            font-weight: bold;
+        }
+    }
+
+}
+
+
+
