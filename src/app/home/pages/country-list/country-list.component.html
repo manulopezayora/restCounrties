@@ -1,2 +1,13 @@
 <app-search-input [inputPlaceholder]="'Search for a country...'" (sendSearchValue)="searchCountry($event)"></app-search-input>
 
+<section class="main-content">
+    <div *ngFor="let country of allCountriesList" class="main-content__card">
+        <img [src]="country.flag" [alt]="country.name" class="card__img">
+        <h2 class="card__title">{{ country.name }}</h2>
+        <ul class="card__info-list">
+            <li class="info-list__item">Population: {{ country.population }}</li>
+            <li class="info-list__item">Region: {{ country.region }}</li>
+            <li class="info-list__item">Capital: {{ country.capital }}</li>
+        </ul>
+    </div>
+</section>

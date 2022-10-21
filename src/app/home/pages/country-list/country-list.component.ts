@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { lastValueFrom, take } from 'rxjs';
+import { RESTCountries } from '../../interfaces/RESTCountries.interface';
+import { RestCountriesService } from '../../services/restCountries/rest-countries.service';
 
 @Component({
   selector: 'app-country-list',
@@ -7,13 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountryListComponent implements OnInit {
 
-  constructor() { }
+  public allCountriesList: RESTCountries[];
+
+  constructor(private restCountriesService: RestCountriesService) {
+    this.allCountriesList = [];
+  }
 
   ngOnInit(): void {
+    this.initialize();
   }
 
   public searchCountry(event: any) {
     console.log(event)
+  }
+
+  private async initialize(): Promise<void> {
+    this.allCountriesList = await this.getAllCountries();
+  }
+
+  private async getAllCountries(): Promise<RESTCountries[]> {
+    const source$ = this.restCountriesService.getAllCountries().pipe(take(1));
+    const allCountries: RESTCountries[] = await lastValueFrom(source$);
+    return allCountries;
   }
 
 }
