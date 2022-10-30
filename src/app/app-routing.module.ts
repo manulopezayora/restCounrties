@@ -10,7 +10,7 @@ const routes: Routes = [
     component: CountryListComponent
   },
   {
-    path: 'detail/:id',
+    path: 'detail/:alpha3Code',
     component: CountryDetailComponent
   }
 ];

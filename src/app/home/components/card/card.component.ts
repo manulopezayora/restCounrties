@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { RESTCountries } from '../../interfaces/RESTCountries.interface';
 
 @Component({
@@ -9,11 +10,15 @@ import { RESTCountries } from '../../interfaces/RESTCountries.interface';
 export class CardComponent implements OnInit {
   @Input() countriesList: RESTCountries[];
 
-  constructor() {
+  constructor(private router: Router) {
     this.countriesList = [];
   }
 
   ngOnInit(): void {
+  }
+
+  public onClick(country: RESTCountries): void {
+    this.router.navigate([`detail/${country.alpha3Code}`]);
   }
 
 }

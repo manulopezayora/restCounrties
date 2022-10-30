@@ -1,0 +1,68 @@
+.main {
+    width: 100%;
+    padding: 1rem;
+}
+
+.flag {
+    // max-width: 100%;
+}
+
+.flag__img {
+    max-width: 100%;
+}
+
+.detail {
+    color: var(--font-color);
+}
+
+.detail__title {
+    
+}
+
+.detail__info {
+}
+
+.info__list {
+    padding: 0;
+    list-style: none;
+}
+
+.list__item {
+    margin-bottom: .5rem;
+}
+
+.item__element::after {
+    content: ', ';
+}
+
+.item__element:last-child::after {
+    content: '';
+}
+ 
+.item__title {
+    font-weight: bold;
+}
+
+.detail__border-countries {
+
+
+}
+
+.border-countries__title {
+
+}
+
+.border-countries__button-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-box__button {
+    border: none;
+    background-color: var(--card-background);
+    box-shadow: var(--card-box-shadow);
+    color: var(--font-color);
+    padding: .5rem;
+}

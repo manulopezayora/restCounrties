@@ -1,1 +1,28 @@
-<p>country-detail works!</p>
+<div *ngIf="countryDetail" class="main">
+    <section class="flag">
+        <img class="flag__img" [src]="countryDetail.flag" [alt]="countryDetail.name">
+    </section>
+    <section class="detail">
+        <h2 class="detail__title">{{countryDetail.name}}</h2>
+        <section class="detail__info">
+            <ul class="info__list">
+                <li class="list__item"><span class="item__title">Native Name:</span> {{ countryDetail.nativeName }}</li>
+                <li class="list__item"><span class="item__title">Population:</span> {{ countryDetail.population | number }}</li>
+                <li class="list__item"><span class="item__title">Region:</span> {{ countryDetail.region }}</li>
+                <li class="list__item"><span class="item__title">Sub Region:</span> {{ countryDetail.subregion }}</li>
+                <li class="list__item"><span class="item__title">Capital:</span> {{ countryDetail.capital }}</li>
+            </ul>
+            <ul class="info__list">
+                <li class="list__item"><span class="item__title">Top Level Domain:</span> {{ countryDetail.topLevelDomain }}</li>
+                <li class="list__item"><span class="item__title">Currencies: </span><span *ngFor="let currency of countryDetail.currencies" >{{ currency.name }}</span></li>
+                <li class="list__item"><span class="item__title">Languages: </span><span *ngFor="let language of countryDetail.languages" class="item__element">{{ language.name }}</span></li>
+            </ul>
+        </section>
+        <section class="detail__border-countries">
+            <h3 class="border-countries__title">Border countries:</h3>
+            <div class="border-countries__button-box">
+                <button *ngFor="let border of countryDetail.borders" class="button-box__button">{{ border }}</button>
+            </div>
+        </section>
+    </section>
+</div>

@@ -18,4 +18,8 @@ export class RestCountriesService {
   public getAllCountries(): Observable<RESTCountries[]> {
     return this.http.get<RESTCountries[]>(`${this.baseUrl}/all`);
   }
+
+  public getCountryDetail(alpha3Code: string): Observable<RESTCountries> {
+    return this.http.get<RESTCountries>(`${this.baseUrl}/alpha/${alpha3Code}`);
+  }
 }

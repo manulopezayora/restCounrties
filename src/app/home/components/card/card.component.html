@@ -1,4 +1,4 @@
-<div *ngFor="let country of countriesList" class="main-content__card">
+<div *ngFor="let country of countriesList" class="main-content__card" (click)="onClick(country)">
     <img [src]="country.flag" [alt]="country.name" class="card__img">
     <h2 class="card__title">{{ country.name }}</h2>
     <ul class="card__info-list">
