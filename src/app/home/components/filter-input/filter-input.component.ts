@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   templateUrl: './filter-input.component.html',
   styleUrls: ['./filter-input.component.scss']
 })
-export class FilterInputComponent implements OnInit {
+export class FilterInputComponent {
   @Input() comboValues: string[];
   @Output() onSelectedOption = new EventEmitter<string>();
 
@@ -15,9 +15,6 @@ export class FilterInputComponent implements OnInit {
     this.comboValues = [];
     this.isFilteredByRegion = false;
 
-  }
-
-  ngOnInit(): void {
   }
 
   public selectedOption(value: string): void {

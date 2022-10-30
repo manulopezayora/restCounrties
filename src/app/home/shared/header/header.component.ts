@@ -5,15 +5,12 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
   public isDarkMode: boolean;
 
   constructor() {
     this.isDarkMode = false;
-  }
-
-  ngOnInit(): void {
   }
 
   public changeDarkMode(): void {

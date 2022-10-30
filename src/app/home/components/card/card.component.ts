@@ -7,18 +7,15 @@ import { RESTCountries } from '../../interfaces/RESTCountries.interface';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent implements OnInit {
+export class CardComponent  {
   @Input() countriesList: RESTCountries[];
 
-  constructor(private router: Router) {
+  constructor(private _router: Router) {
     this.countriesList = [];
   }
 
-  ngOnInit(): void {
-  }
-
   public onClick(country: RESTCountries): void {
-    this.router.navigate([`detail/${country.alpha3Code}`]);
+    this._router.navigate([`detail/${country.alpha3Code}`]);
   }
 
 }
