@@ -21,6 +21,7 @@ export interface RESTCountries {
     area?:          number;
     timezones:      string[];
     borders?:       string[];
+    bordersBtn:     RESTCountries[];
     nativeName:     string;
     numericCode:    string;
     flags:          Flags;

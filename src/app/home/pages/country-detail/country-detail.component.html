@@ -21,7 +21,7 @@
         <section class="detail__border-countries">
             <h3 class="border-countries__title">Border countries:</h3>
             <div class="border-countries__button-box">
-                <button *ngFor="let border of countryDetail.borders" class="button-box__button">{{ border }}</button>
+                <button *ngFor="let border of countryDetail.bordersBtn" class="button-box__button" (click)="onClickBorderButton(border)">{{ border.name }}</button>
             </div>
         </section>
     </section>
