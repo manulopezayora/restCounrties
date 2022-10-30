@@ -1,6 +1,13 @@
 .main {
     width: 100%;
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
 }
 
 .flag {
@@ -8,7 +15,8 @@
 }
 
 .flag__img {
-    max-width: 100%;
+    max-width: 600px;
+    width: 100%;
 }
 
 .detail {

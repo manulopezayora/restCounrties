@@ -1,19 +1,23 @@
 :host {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .main-content__card {
     margin-top: 1rem;
     width: 80%;
+    height: 400px;
+    max-width: 300px;
     background: var(--card-background);
     border-radius: 10px;
     box-shadow: var(--card-box-shadow);
     overflow: hidden;
 
     .card__img {
+        min-width: 100%;
         max-width: 100%;
     }
     
