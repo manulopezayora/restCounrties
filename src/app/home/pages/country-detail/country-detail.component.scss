@@ -1,58 +1,62 @@
+.back-button {
+  margin: 1rem;
+}
+
 .main {
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
 }
 
 .flag__img {
-    max-width: 600px;
-    width: 100%;
+  max-width: 600px;
+  width: 100%;
 }
 
 .detail {
-    color: var(--font-color);
+  color: var(--font-color);
 }
 
 .info__list {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 .list__item {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .item__element::after {
-    content: ', ';
+  content: ", ";
 }
 
 .item__element:last-child::after {
-    content: '';
+  content: "";
 }
- 
+
 .item__title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .border-countries__button-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .button-box__button {
-    border: none;
-    background-color: var(--card-background);
-    box-shadow: var(--card-box-shadow);
-    color: var(--font-color);
-    padding: .5rem;
+  border: none;
+  background-color: var(--card-background);
+  box-shadow: var(--card-box-shadow);
+  color: var(--font-color);
+  padding: 0.5rem;
 }
