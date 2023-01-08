@@ -11,7 +11,7 @@ import { CountryListComponent } from './home/pages/country-list/country-list.com
 import { CountryDetailComponent } from './home/pages/country-detail/country-detail.component';
 import { CardComponent } from './home/components/card/card.component';
 import { FilterInputComponent } from './home/components/filter-input/filter-input.component';
-
+import { ButtonComponent } from './home/components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +21,11 @@ import { FilterInputComponent } from './home/components/filter-input/filter-inpu
     CountryListComponent,
     CountryDetailComponent,
     CardComponent,
-    FilterInputComponent
+    FilterInputComponent,
+    ButtonComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

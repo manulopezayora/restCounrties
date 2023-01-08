@@ -1,0 +1,25 @@
+.button-box__button {
+  border: none;
+  background-color: var(--card-background);
+  box-shadow: var(--card-box-shadow);
+  color: var(--font-color);
+  padding: 0.5rem;
+  font-family: var(--primary-font);
+}
+
+.action-button {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.small-button {
+  font-size: 1rem;
+}
+
+.medium-button {
+  font-size: 1.2rem;
+}
+
+.big-button {
+  font-size: 1.8rem;
+}
